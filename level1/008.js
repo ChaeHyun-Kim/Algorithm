@@ -6,7 +6,7 @@
 // }
 
 function solution(s) {
-  console.log(null?.length);
+  console.log(s.match(/p/gi)?.length);
   return s.match(/p/gi)?.length === s.match(/y/gi)?.length;
 }
 console.log(solution("Pppp"));

@@ -1,7 +1,15 @@
 function solution(ingredient) {
+  let num = 0;
   let result = ingredient.join("");
-  let num = result.match(1231).length;
-  console.log(result);
-  console.log(num);
+  // while (1) {
+  let index = result.indexOf("1231");
+  console.log(index);
+  // if (index === -1) break;
+  // else {
+  ++num;
+  result = result.substr(index, index + 4);
+  return num;
 }
-solution([2, 1, 1, 2, 3, 1, 2, 1, 2, 3, 1]);
+// }
+// }
+console.log(solution([1, 1, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1]));
