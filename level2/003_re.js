@@ -46,3 +46,5 @@ function solution(pr, lo) {
 let pr = [2, 1, 3, 2];
 let lo = 2;
 console.log(solution(pr, lo));
+
+// https://school.programmers.co.kr/learn/courses/30/lessons/42587
