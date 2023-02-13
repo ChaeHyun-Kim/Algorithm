@@ -1,0 +1,38 @@
+function solution(one, two) {
+  let arr1;
+  let arr2;
+  if (one[0].length === two.length) {
+    arr1 = one;
+    arr2 = two;
+  } else {
+    arr1 = two;
+    arr2 = one;
+  }
+  var answer = Array.from(new Array(arr1.length), () =>
+    new Array(arr2[0].length).fill(0)
+  );
+  let sum;
+  for (let i = 0; i < arr1.length; i++) {
+    for (let k = 0; k < arr2[0].length; k++) {
+      sum = 0;
+      for (let j = 0; j < arr2.length; j++) {
+        sum += arr1[i][j] * arr2[j][k];
+      }
+
+      answer[i][k] = sum;
+    }
+  }
+  return answer;
+}
+
+let arr1 = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+];
+let arr2 = [
+  [1, 1, 1],
+  [2, 2, 2],
+  [3, 3, 3],
+];
+console.log(solution(arr1, arr2));
