@@ -1,3 +1,7 @@
+let people = [70, 80, 50, 50];
+let limit = 100;
+console.log(solution(people, limit));
+
 function solution(people, limit) {
   var answer = 0;
   let peo;
