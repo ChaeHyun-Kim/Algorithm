@@ -31,4 +31,7 @@ function solution_short(n, a, b) {
   }
   return answer;
 }
+//Math.ceil() 올림
+//Math.round() 반올림
+//Math.floor() 내림
 // 같은 집합에 들어가면....
