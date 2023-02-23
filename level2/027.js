@@ -10,15 +10,12 @@ function solution(s) {
     let num = s.length - 1;
     while (num >= 0) {
       if (s[num] === dict[s[num - 1]]) {
-        console.log(s[num]);
         num -= 2;
       } else if (s[num] === dict[check.at(-1)]) {
-        console.log("else", s[num]);
         check.pop();
         num -= 1;
       } else {
         check.push(s[num]);
-        console.log("check", check);
         num -= 1;
       }
     }
